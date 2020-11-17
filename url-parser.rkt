@@ -46,6 +46,5 @@
 
 
 (define (url-file-parser s)
-  (display s)
   (apply hash
          (flatten (parse-result! (parse-string url/p s)))))
